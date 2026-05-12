@@ -1,0 +1,136 @@
+{
+  "metadata": {
+    "title": "Daniel Marcos Ferreira — Ingegnere Full-Stack",
+    "description": "Portfolio editoriale — Ingegneria Full-Stack e Sistemi Informativi, provincia di Biella, Italia."
+  },
+  "skipLink": {
+    "label": "Vai al contenuto"
+  },
+  "nav": {
+    "primary": "Principale",
+    "work": "Lavori",
+    "path": "Percorso",
+    "stack": "Stack",
+    "brand": "DMF",
+    "themeLight": "Attiva tema chiaro",
+    "themeDark": "Attiva tema scuro",
+    "language": "Lingua"
+  },
+  "hero": {
+    "byline": "Daniel Marcos Ferreira — Provincia di Biella, Italia",
+    "titleLead": "Ingegneria full-stack",
+    "titleAccent": "radicata nel pensiero sistemico.",
+    "intro": "Focus attuale: ingegneria full-stack e sistemi informativi — interfacce rigorose e backend resilienti.",
+    "spotlight": "In evidenza",
+    "viewWork": "Vai ai case study",
+    "stackLines": [
+      { "label": "React", "mono": "UI" },
+      { "label": "Next.js", "mono": "App Router" },
+      { "label": "NestJS", "mono": "Servizi" }
+    ]
+  },
+  "work": {
+    "kicker": "Lavori selezionati",
+    "title": "Sistemi con chiarezza editoriale.",
+    "lede": "Griglia a larghezza variabile — ogni incarico dimensionato sulla complessità del problema, non su un template.",
+    "techList": "Tecnologie"
+  },
+  "experience": {
+    "kicker": "Percorso",
+    "title": "Dalla disciplina civile ai sistemi digitali.",
+    "lede": "Un filo verticale unisce il coordinamento strutturale alla consegna full-stack — precisione, percorsi di carico e tracciabilità restano costanti; è cambiato il mezzo.",
+    "stepLabel": "Passo {current} di {total}",
+    "entries": {
+      "is_masters": {
+        "period": "2024 — In corso",
+        "title": "Sistemi informativi",
+        "organization": "Percorso di specializzazione",
+        "description": "Ponti tra architettura enterprise, modellazione dati e consegna full-stack — tradurre domini complessi in sistemi affidabili."
+      },
+      "fs_contract": {
+        "period": "2022 — In corso",
+        "title": "Ingegneria full-stack",
+        "organization": "Team di prodotto",
+        "description": "Interfacce React e Next.js con servizi NestJS, PostgreSQL e funzionalità in tempo reale su MongoDB."
+      },
+      "civil_site": {
+        "period": "2019 — 2022",
+        "title": "Coordinamento strutturale e di cantiere",
+        "organization": "Ingegneria civile",
+        "description": "Coordinamento di pacchetti strutturali, tolleranze e sequenze — abitudini a tracciabilità e allineamento degli stakeholder che oggi guidano la consegna software."
+      },
+      "civil_academic": {
+        "period": "2015 — 2019",
+        "title": "Studi in ingegneria civile",
+        "organization": "Università",
+        "description": "Basi in meccanica, materiali e pensiero sistemico — la spina analitica per il lavoro successivo sui sistemi distribuiti."
+      }
+    }
+  },
+  "stack": {
+    "kicker": "Stack",
+    "title": "Strumenti scelti per chiarezza sotto carico.",
+    "columns": {
+      "frontend": {
+        "title": "Frontend",
+        "items": ["React", "Next.js", "TypeScript"]
+      },
+      "backend": {
+        "title": "Backend",
+        "items": ["Node.js", "NestJS", "API REST"]
+      },
+      "data": {
+        "title": "Dati",
+        "items": ["MongoDB", "PostgreSQL", "Firebase"]
+      }
+    }
+  },
+  "footer": {
+    "name": "Daniel Marcos Ferreira",
+    "tagline": "Provincia di Biella, Italia — disponibile per team remote-first in UE."
+  },
+  "projects": {
+    "atlas_ops": {
+      "title": "Console operativa Atlas",
+      "role": "Ingegnere full-stack",
+      "summary": "Piano di controllo multi-tenant con sicurezza a livello di riga in PostgreSQL e superfici REST consapevoli delle policy.",
+      "imageAlt": "Facciata in vetro che riflette grattacieli"
+    },
+    "pulse_field": {
+      "title": "Pulse Field Sync",
+      "role": "Ingegnere full-stack",
+      "summary": "Sincronizzazione in tempo reale con change stream MongoDB, UI ottimistica e flussi di riparazione conflitti.",
+      "imageAlt": "Sala server con luce blu"
+    },
+    "ledger_portal": {
+      "title": "Portale Ledger",
+      "role": "Ingegnere frontend",
+      "summary": "Tabelle dati dense con virtualizzazione, navigazione da tastiera ed export di livello audit.",
+      "imageAlt": "Interno in cemento con linee nette"
+    },
+    "signal_desk": {
+      "title": "Signal Desk",
+      "role": "Ingegnere full-stack",
+      "summary": "Dashboard in edge cache con Firebase Auth e aggregati PostgreSQL per letture sub-secondo.",
+      "imageAlt": "Open space luminoso con postazioni"
+    },
+    "northline_api": {
+      "title": "Gateway API Northline",
+      "role": "Ingegnere backend",
+      "summary": "Service mesh NestJS con validazione DTO schema-first, logging strutturato e webhook idempotenti.",
+      "imageAlt": "Scheda elettronica in primo piano"
+    }
+  },
+  "tech": {
+    "react": "React",
+    "nextjs": "Next.js",
+    "nestjs": "NestJS",
+    "typescript": "TypeScript",
+    "nodejs": "Node.js",
+    "mongodb": "MongoDB",
+    "postgres": "PostgreSQL",
+    "firebase": "Firebase",
+    "api": "API REST",
+    "websocket": "WebSocket"
+  }
+}
