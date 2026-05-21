@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Daniel Marcos Ferreira — Engenheiro Full-Stack",
-    "description": "Portfólio editorial — Engenharia Full-Stack e Sistemas de Informação, região de Biella, Itália."
+    "title": "Daniel Marcos Ferreira — Tech Lead & engenheiro full-stack",
+    "description": "Portfólio editorial — Tech lead e entrega full-stack (TypeScript, React, Node). Região de Biella, Itália; aberto a equipes remote-first na UE."
   },
   "skipLink": {
     "label": "Pular para o conteúdo"
@@ -18,107 +18,137 @@
   },
   "hero": {
     "byline": "Daniel Marcos Ferreira — Região de Biella, Itália",
-    "titleLead": "Engenharia full-stack",
-    "titleAccent": "ancorada em pensamento sistêmico.",
-    "intro": "Foco atual: engenharia full-stack e sistemas de informação — interfaces disciplinadas e backends resilientes.",
+    "titleLead": "Tech lead & full-stack",
+    "titleAccent": "da bases civis a sistemas de produto.",
+    "intro": "Reúno formação em engenharia civil com graduação em Sistemas de Informação e entrega em produção: lidero features em React e Node, deixo contratos de API explícitos e mantém releases rastreáveis. Objetivo: posições de alto impacto com direção técnica ponta a ponta.",
     "spotlight": "Destaque",
-    "viewWork": "Ver estudos de caso",
+    "viewWork": "Ver experiência",
+    "spotlightBullets": [
+      "Assume entrega entre clientes web, serviços e camadas de persistência.",
+      "Alinha stakeholders em escopo, critérios de qualidade e releases incrementais.",
+      "Firebase, PostgreSQL e MongoDB conforme a superfície do produto."
+    ],
+    "spotlightTech": "Stack: TypeScript · React · Next.js · Node.js · NestJS · PostgreSQL · Firebase · REST",
     "stackLines": [
-      { "label": "React", "mono": "UI" },
-      { "label": "Next.js", "mono": "App Router" },
-      { "label": "NestJS", "mono": "Serviços" }
+      { "label": "TypeScript", "mono": "Ponta a ponta" },
+      { "label": "React", "mono": "UI de produto" },
+      { "label": "Node.js", "mono": "Serviços" }
     ]
   },
   "work": {
-    "kicker": "Trabalhos selecionados",
-    "title": "Sistemas com clareza editorial.",
-    "lede": "Grade de largura variável — cada entrega dimensionada pela complexidade do problema, não por um template.",
+    "kicker": "Experiência",
+    "title": "Empregadores recentes, mesmo rigor de execução.",
+    "lede": "Três papéis do CV — cada card espelha período, cargo e tecnologias usadas no dia a dia.",
     "techList": "Tecnologias"
   },
   "experience": {
     "kicker": "Trajetória",
-    "title": "Da disciplina civil aos sistemas digitais.",
-    "lede": "Um fio vertical liga coordenação estrutural à entrega full-stack — precisão, caminhos de carga e rastreabilidade permanecem; mudou o meio.",
+    "title": "Graduação civil, foco em sistemas, trilho de tech lead.",
+    "lede": "Formação em engenharia civil (UBM), bootcamp full-stack (Driven) e graduação em Sistemas de Informação em andamento (Estácio), ao lado de FIGTREE, NOVWARE e ORBWARE — precisão e rastreabilidade trazidas de estruturas para software.",
+    "formationHeading": "Formação",
+    "professionalHeading": "Experiência profissional",
     "stepLabel": "Passo {current} de {total}",
     "entries": {
-      "is_masters": {
-        "period": "2024 — Atual",
-        "title": "Sistemas de informação",
-        "organization": "Pós-graduação",
-        "description": "Conectando arquitetura corporativa, modelagem de dados e entrega full-stack — traduzindo domínios complexos em sistemas confiáveis."
-      },
-      "fs_contract": {
+      "degree_information_systems": {
         "period": "2022 — Atual",
-        "title": "Engenharia full-stack",
-        "organization": "Times de produto",
-        "description": "Entregando experiências React e Next.js com serviços NestJS, PostgreSQL e recursos em tempo real com MongoDB."
+        "title": "Sistemas de Informação (graduação)",
+        "organization": "Universidade Estácio de Sá",
+        "description": "Curso em andamento cobrindo engenharia de software, bancos de dados e sistemas orientados a empresa — sustentando a transição para responsabilidades de tech lead."
       },
-      "civil_site": {
-        "period": "2019 — 2022",
-        "title": "Coordenação de obra e estruturas",
-        "organization": "Engenharia civil",
-        "description": "Coordenação de pacotes estruturais, tolerâncias e sequenciamento — hábitos de rastreabilidade e alinhamento com stakeholders que hoje informam a entrega de software."
+      "bootcamp_driven": {
+        "period": "2023 — 2024",
+        "title": "Bootcamp de desenvolvimento full-stack",
+        "organization": "Driven",
+        "description": "Programa intensivo em stacks web modernas, APIs e entrega ágil — a ponte da prática civil para engenharia de produto."
       },
-      "civil_academic": {
-        "period": "2015 — 2019",
-        "title": "Graduação em engenharia civil",
-        "organization": "Universidade",
-        "description": "Fundamentos em mecânica, materiais e pensamento sistêmico — a espinha analítica para o trabalho posterior em sistemas distribuídos."
+      "degree_civil_engineering": {
+        "period": "2015 — 2021",
+        "title": "Engenharia civil (graduação)",
+        "organization": "Universidade Brasil Central (UBM)",
+        "description": "Mecânica das estruturas, materiais e disciplinas de coordenação que ainda informam como desenho sistemas sob carga e ambiguidade."
+      },
+      "job_figtree": {
+        "period": "Ago 2024 — Atual",
+        "title": "Tech Lead / Engenheiro full-stack",
+        "organization": "FIGTREE",
+        "description": "Engajamento principal no produto: desenho de features, revisão de direção técnica e entrega em todo o stack.",
+        "bullets": [
+          "Lidera implementação de módulos voltados ao cliente e ferramentas internas com ownership de qualidade e prazos.",
+          "Define e evolui contratos REST entre clientes Next.js/React e serviços NestJS.",
+          "Trabalha com stakeholders para traduzir regras de negócio em incrementos testáveis e backends observáveis."
+        ],
+        "techLine": "Tecnologias utilizadas: TypeScript, React, Next.js, Node.js, NestJS, PostgreSQL, Firebase, APIs REST."
+      },
+      "job_novware": {
+        "period": "Jul 2025 — Atual",
+        "title": "Engenheiro full-stack",
+        "organization": "NOVWARE",
+        "description": "Construção e manutenção de produtos web com ênfase em codebases TypeScript-first e comportamento previsível de APIs.",
+        "bullets": [
+          "Entrega interfaces React com atenção a acessibilidade, performance e limites de estado sustentáveis.",
+          "Implementa e estende serviços Node/NestJS com validação orientada a schema e logging estruturado.",
+          "Colabora em cerimônias ágeis com comunicação clara de trade-offs e risco de entrega."
+        ],
+        "techLine": "Tecnologias utilizadas: React, TypeScript, Next.js, Node.js, NestJS, MongoDB, APIs REST."
+      },
+      "job_orbware": {
+        "period": "Dez 2024 — Jul 2025",
+        "title": "Engenheiro full-stack",
+        "organization": "ORBWARE",
+        "description": "Contribuição em ciclo curto em superfícies de produto e integrações, com janela de atuação focada.",
+        "bullets": [
+          "Entregou features React respeitando design systems e convenções de API existentes.",
+          "Integrou serviços de terceiros e endureceu fluxos de erro para tráfego em produção.",
+          "Documentou passagem de bastão para a equipe núcleo reduzir risco de continuidade."
+        ],
+        "techLine": "Tecnologias utilizadas: React, TypeScript, Next.js, APIs REST."
       }
     }
   },
   "stack": {
     "kicker": "Stack",
-    "title": "Ferramentas escolhidas para clareza sob carga.",
+    "title": "Experiência técnica e competências complementares.",
     "columns": {
-      "frontend": {
-        "title": "Frontend",
-        "items": ["React", "Next.js", "TypeScript"]
+      "languages": {
+        "title": "Linguagens e runtime",
+        "items": ["JavaScript", "TypeScript", "Node.js"]
       },
-      "backend": {
-        "title": "Backend",
-        "items": ["Node.js", "NestJS", "APIs REST"]
+      "fullStack": {
+        "title": "Frameworks e entrega",
+        "items": ["React", "Next.js", "NestJS", "APIs REST", "HTML e CSS"]
       },
-      "data": {
-        "title": "Dados",
-        "items": ["MongoDB", "PostgreSQL", "Firebase"]
+      "leadership": {
+        "title": "Dados, arquitetura e forma de trabalhar",
+        "items": ["PostgreSQL", "MongoDB", "Firebase", "Git", "Scrum", "Liderança técnica", "Análise de requisitos", "Documentação"]
       }
     }
   },
   "footer": {
     "name": "Daniel Marcos Ferreira",
-    "tagline": "Região de Biella, Itália — aberto a times remote-first na UE."
+    "tagline": "Região de Biella, Itália — aberto a equipes remote-first na UE.",
+    "emailLabel": "E-mail",
+    "emailAddress": "",
+    "linkedinLabel": "LinkedIn",
+    "linkedinUrl": ""
   },
   "projects": {
-    "atlas_ops": {
-      "title": "Console de operações Atlas",
-      "role": "Engenheiro full-stack",
-      "summary": "Plano de controle multi-tenant com segurança em nível de linha no PostgreSQL e superfícies REST alinhadas a políticas.",
-      "imageAlt": "Fachada de vidro refletindo arranha-céus"
+    "figtree": {
+      "title": "FIGTREE",
+      "role": "Tech Lead / Engenheiro full-stack · 2024 — Atual",
+      "summary": "Entrega liderada entre clientes React/Next.js e serviços NestJS — do desenho de APIs a features com Firebase e PostgreSQL — com ownership da direção técnica e alinhamento com stakeholders.",
+      "imageAlt": "Equipe colaborando em laptops em escritório moderno"
     },
-    "pulse_field": {
-      "title": "Pulse Field Sync",
-      "role": "Engenheiro full-stack",
-      "summary": "Sincronização em tempo real com change streams do MongoDB, UI otimista e fluxos de resolução de conflitos.",
-      "imageAlt": "Sala de servidores com luz azul"
+    "novware": {
+      "title": "NOVWARE",
+      "role": "Engenheiro full-stack · 2025 — Atual",
+      "summary": "Produtos web TypeScript-first: UIs React refinadas, APIs Node/NestJS previsíveis e MongoDB quando o domínio pede modelos de documentos flexíveis.",
+      "imageAlt": "Desenvolvedores discutindo código na tela"
     },
-    "ledger_portal": {
-      "title": "Portal Ledger",
-      "role": "Engenheiro frontend",
-      "summary": "Tabelas densas com virtualização, navegação por teclado e exportações em nível de auditoria.",
-      "imageAlt": "Interior em concreto com linhas marcantes"
-    },
-    "signal_desk": {
-      "title": "Signal Desk",
-      "role": "Engenheiro full-stack",
-      "summary": "Dashboards em cache na borda com Firebase Auth e agregados PostgreSQL para leituras abaixo de um segundo.",
-      "imageAlt": "Escritório aberto com luz natural"
-    },
-    "northline_api": {
-      "title": "Gateway de API Northline",
-      "role": "Engenheiro backend",
-      "summary": "Malha de serviços NestJS com validação DTO schema-first, logging estruturado e webhooks idempotentes.",
-      "imageAlt": "Placa de circuito em tons frios"
+    "orbware": {
+      "title": "ORBWARE",
+      "role": "Engenheiro full-stack · 2024 — 2025",
+      "summary": "Engajamento focado em features React e integrações REST com documentação para handover — escopo enxuto e tratamento de erros pensado para produção.",
+      "imageAlt": "Notebook com editor de código em luz suave"
     }
   },
   "tech": {

@@ -16,6 +16,13 @@ export async function PortfolioHero({
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "hero" });
   const stackLines = t.raw("stackLines") as { label: string; mono: string }[];
+  const spotlightBulletsRaw = t.raw("spotlightBullets");
+  const spotlightBullets = Array.isArray(spotlightBulletsRaw)
+    ? (spotlightBulletsRaw as string[]).filter(
+        (line) => typeof line === "string" && line.length > 0
+      )
+    : [];
+  const spotlightTech = t("spotlightTech").trim();
 
   return (
     <section
@@ -27,7 +34,7 @@ export async function PortfolioHero({
         <p className="font-mono text-xs uppercase tracking-[0.35em] text-muted-foreground">
           {t("byline")}
         </p>
-        <div className="mt-10 grid gap-14 lg:grid-cols-12 lg:items-end lg:gap-10">
+        <div className="mt-10 grid gap-14 lg:grid-cols-12 lg:items-start lg:gap-10">
           <div className="lg:col-span-5">
             <div className="flex flex-col gap-2">
               {stackLines.map((line) => (
@@ -81,6 +88,20 @@ export async function PortfolioHero({
                 <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
                   {featured.summary}
                 </p>
+                {spotlightBullets.length > 0 ? (
+                  <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
+                    {spotlightBullets.map((line) => (
+                      <li key={line} className="marker:text-accent">
+                        {line}
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
+                {spotlightTech ? (
+                  <p className="mt-4 font-mono text-xs leading-relaxed text-muted-foreground">
+                    {spotlightTech}
+                  </p>
+                ) : null}
                 <a
                   href="#work"
                   className="mt-6 inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.24em] text-accent underline-offset-4 transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"

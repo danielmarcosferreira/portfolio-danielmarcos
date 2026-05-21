@@ -10,10 +10,11 @@ import { getTechIcons } from "@/lib/tech-icons";
 import { cn } from "@/lib/utils";
 import type { Project, ProjectGridSpan } from "@/types/project";
 
+/** 12-column work grid: featured row full width; pair below 6+6. */
 const spanClass: Record<ProjectGridSpan, string> = {
-  hero: "lg:col-span-8",
-  wide: "lg:col-span-7",
-  standard: "lg:col-span-5",
+  hero: "lg:col-span-12",
+  wide: "lg:col-span-6",
+  standard: "lg:col-span-6",
 };
 
 interface ProjectCardProps {
