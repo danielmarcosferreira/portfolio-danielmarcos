@@ -2,20 +2,28 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import type { LocalizedExperienceEntry } from "@/lib/experience-i18n";
 import { getLocalizedPathSections } from "@/lib/experience-i18n";
+import { cn } from "@/lib/utils";
 
 function TimelineList({
   items,
   stepLabel,
   ariaLabel,
+  variant = "default",
 }: {
   items: LocalizedExperienceEntry[];
   stepLabel: (current: number, total: number) => string;
   ariaLabel: string;
+  variant?: "professional" | "default";
 }) {
+  const isProfessional = variant === "professional";
+
   return (
     <ol
       aria-label={ariaLabel}
-      className="relative mt-8 max-w-3xl border-l border-border pl-8 sm:pl-10"
+      className={cn(
+        "relative mt-8 border-l border-border pl-8 sm:pl-10",
+        isProfessional ? "max-w-4xl" : "max-w-3xl"
+      )}
     >
       {items.map((item, index) => (
         <li key={item.id} className="relative pb-14 last:pb-0">
@@ -23,12 +31,22 @@ function TimelineList({
             aria-hidden
             className="absolute left-[-33px] top-1.5 flex size-3 -translate-x-1/2 items-center justify-center sm:left-[-41px]"
           >
-            <span className="size-2 rounded-full bg-accent ring-4 ring-background" />
+            <span
+              className={cn(
+                "rounded-full bg-accent ring-4 ring-background",
+                isProfessional ? "size-2.5" : "size-2"
+              )}
+            />
           </span>
           <p className="font-mono text-[0.65rem] uppercase tracking-[0.3em] text-muted-foreground">
             {item.period}
           </p>
-          <h3 className="mt-2 font-heading text-2xl tracking-tight text-foreground">
+          <h3
+            className={cn(
+              "mt-2 font-heading tracking-tight text-foreground",
+              isProfessional ? "text-2xl sm:text-3xl" : "text-2xl"
+            )}
+          >
             {item.title}
           </h3>
           <p className="font-mono text-xs text-accent">{item.organization}</p>
@@ -87,26 +105,27 @@ export async function ExperienceTimeline({ locale }: { locale: string }) {
           </p>
         </div>
 
-        <div className="mt-12">
-          <h3 className="font-heading text-xl tracking-tight text-foreground sm:text-2xl">
-            {t("formationHeading")}
+        <div className="mt-14">
+          <h3 className="font-heading text-2xl tracking-tight text-foreground sm:text-3xl">
+            {t("professionalHeading")}
           </h3>
           <TimelineList
-            items={education}
-            ariaLabel={t("formationHeading")}
+            items={professional}
+            variant="professional"
+            ariaLabel={t("professionalHeading")}
             stepLabel={(current, total) =>
               t("stepLabel", { current, total })
             }
           />
         </div>
 
-        <div className="mt-16">
+        <div id="education" className="mt-20 scroll-mt-24">
           <h3 className="font-heading text-xl tracking-tight text-foreground sm:text-2xl">
-            {t("professionalHeading")}
+            {t("formationHeading")}
           </h3>
           <TimelineList
-            items={professional}
-            ariaLabel={t("professionalHeading")}
+            items={education}
+            ariaLabel={t("formationHeading")}
             stepLabel={(current, total) =>
               t("stepLabel", { current, total })
             }

@@ -1,15 +1,14 @@
-/** Education (CV Formação), top to bottom. */
+/** Education (CV), top to bottom. */
 export const experienceEducationIds = [
   "degree-information-systems",
   "bootcamp-driven",
   "degree-civil-engineering",
 ] as const;
 
-/** Professional roles (CV Experiência profissional), CV order. */
+/** Professional roles (CV order). */
 export const experienceProfessionalIds = [
   "job-figtree",
-  "job-novware",
-  "job-orbware",
+  "job-novaware",
 ] as const;
 
 export type ExperienceEducationId =

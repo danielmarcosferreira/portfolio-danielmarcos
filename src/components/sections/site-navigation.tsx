@@ -11,8 +11,9 @@ import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 
 const NAV_KEYS = [
-  { href: "#work", labelKey: "work" as const },
-  { href: "#experience", labelKey: "path" as const },
+  { href: "#top", labelKey: "about" as const },
+  { href: "#experience", labelKey: "experience" as const },
+  { href: "#education", labelKey: "education" as const },
   { href: "#stack", labelKey: "stack" as const },
 ];
 

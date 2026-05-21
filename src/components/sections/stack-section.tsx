@@ -1,11 +1,11 @@
-import { Code2, Server, Users } from "lucide-react";
+import { Code2, Database, Server } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
-const columnKeys = ["languages", "fullStack", "leadership"] as const;
+const columnKeys = ["frontend", "backend", "data"] as const;
 const icons = {
-  languages: Code2,
-  fullStack: Server,
-  leadership: Users,
+  frontend: Code2,
+  backend: Server,
+  data: Database,
 } as const;
 
 export async function StackSection({ locale }: { locale: string }) {
