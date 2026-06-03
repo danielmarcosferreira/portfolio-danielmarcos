@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "Daniel Faria — Sviluppatore Full-Stack Mid-level",
+    "title": "Daniel Marcos — Sviluppatore Full-Stack Mid-level",
     "description": "Sviluppatore full-stack mid-level a Livorno Ferraris, Vercelli, Italia. React, Next.js, TypeScript, TailwindCSS, Node.js, NestJS, Firebase."
   },
   "skipLink": {
@@ -12,7 +12,7 @@
     "experience": "Esperienza",
     "education": "Formazione",
     "stack": "Stack",
-    "brand": "DF",
+    "brand": "DM",
     "themeLight": "Attiva tema chiaro",
     "themeDark": "Attiva tema scuro",
     "language": "Lingua"
@@ -20,7 +20,7 @@
   "hero": {
     "byline": "Livorno Ferraris – Vercelli, Italia",
     "languagesLine": "Italiano e brasiliano di nascita · Fluente in portoghese e inglese",
-    "name": "Daniel Faria",
+    "name": "Daniel Marcos",
     "role": "Sviluppatore Full-Stack Mid-level",
     "profile": "Sviluppatore Full-Stack Mid-level con comprovata esperienza nella progettazione e implementazione di applicazioni web scalabili, performanti e responsive. Solida specializzazione nello sviluppo frontend con React.js, Next.js, TypeScript e TailwindCSS, unita a robuste competenze backend utilizzando Node.js, NestJS, Express.js e database relazionali/non-relazionali (PostgreSQL, MongoDB, Firebase). Esperto nell'intero ciclo di vita del software, dal design di interfacce utente intuitive all'integrazione di API REST complesse. Fortemente orientato alla qualità del codice, all'adozione di clean code e alla collaborazione in ambienti Agile (Scrum).",
     "techChipsLabel": "Tecnologie principali",
@@ -49,16 +49,16 @@
   "experience": {
     "kicker": "Esperienza",
     "title": "Consegna professionale su prodotti reali.",
-    "lede": "Ruoli full-stack mid-level presso FIGTREE e NOVAWARE—landing page, pannelli admin, portali studenti e leadership tecnica dalla discovery alla produzione.",
+    "lede": "FIGTREE, NOVAWARE e ORBWARE—ed-tech, software house e gestione condominiale con React, API e lavoro in team.",
     "formationHeading": "Formazione",
     "professionalHeading": "Esperienza professionale",
     "stepLabel": "Passo {current} di {total}",
     "entries": {
       "degree_information_systems": {
-        "period": "2022 — In corso",
+        "period": "2022 — 2026",
         "title": "Laurea in Sistemi Informativi",
         "organization": "Universidade Estácio de Sá",
-        "description": "Percorso triennale in corso in sistemi informativi e discipline software-oriented."
+        "description": "Laurea triennale conclusa in sistemi informativi — ingegneria del software, database e sistemi orientati al business."
       },
       "bootcamp_driven": {
         "period": "2023 — 2024",
@@ -76,12 +76,11 @@
         "period": "Ago 2023 — In corso",
         "title": "Sviluppatore Full-Stack Mid-level",
         "organization": "FIGTREE",
-        "description": "Consegna end-to-end per una piattaforma educativa: acquisizione lead, operazioni e area studenti.",
+        "description": "Piattaforma educativa: acquisizione lead, operazioni interne ed esperienza studente.",
         "bullets": [
-          "Sviluppata landing page responsive ottimizzata per la conversione lead.",
-          "Creato pannello admin per gestione utenti e controllo del sistema.",
-          "Realizzato portale studenti interattivo per classi, materiali e attività.",
-          "Esperienza responsive con navigazione chiara e UX fluida."
+          "Landing page responsive ottimizzata per la conversione dei lead.",
+          "Dashboard admin per studenti, docenti e lead dal sito.",
+          "Portale studenti per lezioni, materiali e attività con navigazione chiara e UX fluida."
         ],
         "techLine": "Tecnologie utilizzate: TypeScript, ReactJS, TailwindCSS, Node.js, NestJS, API REST, Firebase, Git, Scrum."
       },
@@ -89,14 +88,25 @@
         "period": "Lug 2025 — In corso",
         "title": "Sviluppatore Full-Stack Mid-level",
         "organization": "NOVAWARE",
-        "description": "Leadership tecnica del team full-stack dalla discovery alla produzione in una software house.",
+        "description": "Software house—leadership tecnica full-stack dalla discovery alla produzione.",
         "bullets": [
-          "Guido il team lungo l'intero ciclo di vita del software.",
-          "Architettura di soluzioni tra cui un sistema di gestione container e un'app enterprise per il settore edile.",
-          "Portale studenti con ruoli, avanzamento, materiali sicuri, certificati automatizzati e prenotazione lezioni in presenza.",
-          "Qualità tramite code review, standard ESLint/Prettier e clean code."
+          "Portale studenti (scuola di saldatura): ruoli studente/docente/admin, progressi, dispense, certificati e lezioni in presenza con calendario e posti.",
+          "Soluzioni su misura: gestione container e app enterprise per l'edilizia.",
+          "Code review, ESLint/Prettier e componenti riutilizzabili per qualità e manutenibilità."
         ],
         "techLine": "Tecnologie utilizzate: TypeScript, ReactJS, TailwindCSS, Node.js, NestJS, Firebase, API REST, Git, Scrum."
+      },
+      "job_orbware": {
+        "period": "Dic 2024 — Lug 2025",
+        "title": "Sviluppatore Front-End Junior",
+        "organization": "ORBWARE",
+        "description": "Sistema intelligente di gestione condominiale con accessi per profilo utente.",
+        "bullets": [
+          "Moduli per ispettori, amministratori e super admin con UI e funzioni per ruolo.",
+          "Collaborazione con backend e prodotto per consegnare feature nei tempi previsti.",
+          "Codebase scalabile con clean architecture e best practice."
+        ],
+        "techLine": "Tecnologie utilizzate: ReactJS, Styled Components, API REST, Git, Scrum."
       }
     }
   },
@@ -119,7 +129,7 @@
     }
   },
   "footer": {
-    "name": "Daniel Faria",
+    "name": "Daniel Marcos",
     "tagline": "Livorno Ferraris – Vercelli, Italia · Italiano e brasiliano · EN, IT e PT",
     "emailLabel": "Email",
     "emailAddress": "daniel.marcos.1038@gmail.com",

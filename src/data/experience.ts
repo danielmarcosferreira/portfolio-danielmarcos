@@ -5,10 +5,11 @@ export const experienceEducationIds = [
   "degree-civil-engineering",
 ] as const;
 
-/** Professional roles (CV order). */
+/** Professional roles (newest first). */
 export const experienceProfessionalIds = [
-  "job-figtree",
   "job-novaware",
+  "job-figtree",
+  "job-orbware",
 ] as const;
 
 export type ExperienceEducationId =

@@ -1,6 +1,12 @@
 import { Code2, Database, Server } from "lucide-react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
+import {
+  hoverChipClasses,
+  hoverStackColumnClasses,
+} from "@/lib/interactive-hover";
+import { cn } from "@/lib/utils";
+
 const columnKeys = ["frontend", "backend", "data"] as const;
 const icons = {
   frontend: Code2,
@@ -18,7 +24,7 @@ export async function StackSection({ locale }: { locale: string }) {
       aria-labelledby="stack-heading"
       className="bg-background py-20 sm:py-24"
     >
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="font-mono text-xs uppercase tracking-[0.35em] text-muted-foreground">
             {t("kicker")}
@@ -41,7 +47,7 @@ export async function StackSection({ locale }: { locale: string }) {
             return (
               <div
                 key={key}
-                className="border border-border/80 bg-card/30 p-6 sm:p-7"
+                className={cn(hoverStackColumnClasses, "p-6 sm:p-7")}
               >
                 <div className="flex items-center gap-3">
                   <Icon className="size-5 text-accent" aria-hidden />
@@ -53,7 +59,10 @@ export async function StackSection({ locale }: { locale: string }) {
                   {col.items.map((item) => (
                     <li
                       key={item}
-                      className="flex items-center gap-2 border-l border-border pl-3 text-foreground/90"
+                      className={cn(
+                        hoverChipClasses,
+                        "flex items-center gap-2 py-2 pl-3 pr-2 text-sm text-foreground/90"
+                      )}
                     >
                       <span className="text-[0.65rem] uppercase tracking-[0.2em] text-muted-foreground">
                         —

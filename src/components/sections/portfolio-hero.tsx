@@ -1,5 +1,8 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
+import { hoverChipClasses } from "@/lib/interactive-hover";
+import { cn } from "@/lib/utils";
+
 interface PortfolioHeroProps {
   locale: string;
 }
@@ -18,7 +21,7 @@ export async function PortfolioHero({ locale }: PortfolioHeroProps) {
       aria-labelledby="hero-heading"
       className="border-b border-border/70 bg-background"
     >
-      <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
+      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-20 lg:px-8">
         <p className="font-mono text-xs uppercase tracking-[0.35em] text-muted-foreground">
           {t("byline")}
         </p>
@@ -42,15 +45,18 @@ export async function PortfolioHero({ locale }: PortfolioHeroProps) {
         </div>
 
         <ul
-          className="mt-10 flex max-w-3xl flex-wrap gap-2"
+          className="mt-10 flex max-w-3xl flex-wrap gap-2.5"
           aria-label={t("techChipsLabel")}
         >
           {techChips.map((chip) => (
             <li
               key={chip}
-              className="border border-border/80 bg-card/40 px-3 py-1.5 font-mono text-[0.65rem] uppercase tracking-[0.18em] text-foreground/90"
+              className={cn(
+                hoverChipClasses,
+                "px-3 py-1.5 font-mono text-[0.65rem] uppercase tracking-[0.18em] text-foreground/85"
+              )}
             >
-              {chip}
+              <span className="relative z-[1]">{chip}</span>
             </li>
           ))}
         </ul>
@@ -73,7 +79,9 @@ export async function PortfolioHero({ locale }: PortfolioHeroProps) {
             ) : null}
             {phone ? (
               <a
-                href={`tel:${phone.replace(/\s/g, "")}`}
+                href={`https://wa.me/${phone.replace(/\s/g, "")}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
                 {t("phoneDisplay")}

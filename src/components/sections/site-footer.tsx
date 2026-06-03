@@ -9,7 +9,7 @@ export async function SiteFooter({ locale }: { locale: string }) {
 
   return (
     <footer className="border-t border-border/70 bg-muted/15">
-      <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-10 sm:flex-row sm:items-start sm:justify-between sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-10 sm:flex-row sm:items-start sm:justify-between sm:px-6 lg:px-8">
         <div className="space-y-2">
           <p className="font-heading text-lg text-foreground">{t("name")}</p>
           <div className="flex flex-wrap gap-x-4 gap-y-2 font-mono text-xs">
@@ -23,7 +23,9 @@ export async function SiteFooter({ locale }: { locale: string }) {
             ) : null}
             {phone ? (
               <a
-                href={`tel:${phone.replace(/\s/g, "")}`}
+                href={`https://wa.me/${phone.replace(/\s/g, "")}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
                 {t("phoneDisplay")}
@@ -41,7 +43,7 @@ export async function SiteFooter({ locale }: { locale: string }) {
             ) : null}
           </div>
         </div>
-        <p className="max-w-md font-mono text-xs leading-relaxed text-muted-foreground sm:text-right">
+        <p className="max-w-xl font-mono text-xs leading-relaxed text-muted-foreground sm:text-right">
           {t("tagline")}
         </p>
       </div>

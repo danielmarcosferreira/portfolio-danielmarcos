@@ -29,7 +29,7 @@ export function LocaleSwitcher() {
             aria-pressed={active}
             onClick={() => router.replace(pathname, { locale: loc })}
             className={cn(
-              "min-w-[2.25rem] px-2 py-1 font-mono text-[0.65rem] uppercase tracking-wider transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background",
+              "min-w-[2.25rem] px-2 py-1 font-mono text-[0.65rem] uppercase tracking-wider transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background cursor-pointer",
               active
                 ? "text-foreground ring-1 ring-foreground/20"
                 : "text-muted-foreground hover:text-foreground"

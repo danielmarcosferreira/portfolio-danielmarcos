@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "Daniel Faria — Mid-level Full-Stack Developer",
+    "title": "Daniel Marcos — Mid-level Full-Stack Developer",
     "description": "Mid-level full-stack developer in Livorno Ferraris, Vercelli, Italy. React, Next.js, TypeScript, TailwindCSS, Node.js, NestJS, Firebase. Open to remote-first EU teams."
   },
   "skipLink": {
@@ -12,7 +12,7 @@
     "experience": "Experience",
     "education": "Education",
     "stack": "Stack",
-    "brand": "DF",
+    "brand": "DM",
     "themeLight": "Activate light mode",
     "themeDark": "Activate dark mode",
     "language": "Language"
@@ -20,7 +20,7 @@
   "hero": {
     "byline": "Livorno Ferraris – Vercelli, Italy",
     "languagesLine": "Italian and Brazilian by birth · Fluent in Portuguese and English",
-    "name": "Daniel Faria",
+    "name": "Daniel Marcos",
     "role": "Mid-level Full-Stack Developer",
     "profile": "Mid-level full-stack developer with proven experience designing and building scalable, performant, responsive web applications. Strong frontend focus with React.js, Next.js, TypeScript, and TailwindCSS, plus robust backend work using Node.js, NestJS, Express.js, and SQL/NoSQL databases (PostgreSQL, MongoDB, Firebase). Experienced across the full software lifecycle—from intuitive UI design to complex REST API integration—with a focus on code quality, clean code, and collaborative Agile (Scrum) delivery.",
     "techChipsLabel": "Core technologies",
@@ -49,16 +49,16 @@
   "experience": {
     "kicker": "Experience",
     "title": "Professional delivery at scale.",
-    "lede": "Mid-level full-stack roles at FIGTREE and NOVAWARE—landing pages, admin tools, student portals, and team leadership from discovery to production.",
+    "lede": "FIGTREE, NOVAWARE, and ORBWARE—ed-tech products, custom software at a software house, and role-based condo management.",
     "formationHeading": "Education",
     "professionalHeading": "Professional experience",
     "stepLabel": "Step {current} of {total}",
     "entries": {
       "degree_information_systems": {
-        "period": "2022 — Present",
+        "period": "2022 — 2026",
         "title": "Bachelor's in Information Systems",
         "organization": "Universidade Estácio de Sá",
-        "description": "Ongoing undergraduate degree in information systems and software-oriented disciplines."
+        "description": "Completed bachelor's in information systems — software engineering, databases, and business-oriented systems."
       },
       "bootcamp_driven": {
         "period": "2023 — 2024",
@@ -76,12 +76,11 @@
         "period": "Aug 2023 — Present",
         "title": "Mid-level Full-Stack Developer",
         "organization": "FIGTREE",
-        "description": "End-to-end delivery for an education platform: acquisition, operations, and student-facing products.",
+        "description": "Ed-tech platform: lead acquisition, internal operations, and the student experience.",
         "bullets": [
-          "Developed a lead-optimized responsive landing page.",
-          "Built an admin dashboard for user management and system control.",
-          "Delivered an interactive student portal for classes, materials, and activities.",
-          "Focused on responsive design, clear navigation, and smooth UX."
+          "Responsive landing page tuned for lead conversion.",
+          "Admin dashboard for students, teachers, and website leads.",
+          "Student portal for classes, materials, and activities with clear navigation and smooth UX."
         ],
         "techLine": "Technologies used: TypeScript, ReactJS, TailwindCSS, Node.js, NestJS, REST APIs, Firebase, Git, Scrum."
       },
@@ -89,14 +88,25 @@
         "period": "Jul 2025 — Present",
         "title": "Mid-level Full-Stack Developer",
         "organization": "NOVAWARE",
-        "description": "Technical leadership of a full-stack team through discovery, build, and production at a software house.",
+        "description": "Software house—technical leadership of a full-stack team from discovery to production.",
         "bullets": [
-          "Lead the team across the full software development lifecycle.",
-          "Architected diverse solutions including a container management system and an enterprise construction management app.",
-          "Built a role-based student portal: progress tracking, secure materials, automated certificates, and in-person class scheduling.",
-          "Enforce quality via code reviews, ESLint/Prettier standards, and clean code practices."
+          "Welding-school student portal: student/teacher/admin roles, progress, handouts, certificates, and in-person scheduling with capacity control.",
+          "Custom products: container management system and enterprise construction-management app.",
+          "Code reviews, ESLint/Prettier standards, and reusable components for quality and maintainability."
         ],
         "techLine": "Technologies used: TypeScript, ReactJS, TailwindCSS, Node.js, NestJS, Firebase, REST APIs, Git, Scrum."
+      },
+      "job_orbware": {
+        "period": "Dec 2024 — Jul 2025",
+        "title": "Junior Front-End Developer",
+        "organization": "ORBWARE",
+        "description": "Smart condominium management system with profile-based access control.",
+        "bullets": [
+          "Modules for inspectors, admins, and super admins with UI and features tailored to each role.",
+          "Close collaboration with backend and product to ship features on schedule.",
+          "Scalable, maintainable front-end code with clean architecture and best practices."
+        ],
+        "techLine": "Technologies used: ReactJS, Styled Components, REST APIs, Git, Scrum."
       }
     }
   },
@@ -119,8 +129,8 @@
     }
   },
   "footer": {
-    "name": "Daniel Faria",
-    "tagline": "Livorno Ferraris – Vercelli, Italy · Italian & Brazilian · PT & EN",
+    "name": "Daniel Marcos",
+    "tagline": "Livorno Ferraris – Vercelli, Italy · Italian & Brazilian · EN, IT e PT",
     "emailLabel": "Email",
     "emailAddress": "daniel.marcos.1038@gmail.com",
     "phoneNumber": "+393520865013",

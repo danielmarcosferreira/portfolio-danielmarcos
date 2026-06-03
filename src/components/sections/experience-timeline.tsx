@@ -2,6 +2,10 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import type { LocalizedExperienceEntry } from "@/lib/experience-i18n";
 import { getLocalizedPathSections } from "@/lib/experience-i18n";
+import {
+  hoverEase,
+  hoverTimelineCardClasses,
+} from "@/lib/interactive-hover";
 import { cn } from "@/lib/utils";
 
 function TimelineList({
@@ -38,35 +42,44 @@ function TimelineList({
               )}
             />
           </span>
-          <p className="font-mono text-[0.65rem] uppercase tracking-[0.3em] text-muted-foreground">
-            {item.period}
-          </p>
-          <h3
-            className={cn(
-              "mt-2 font-heading tracking-tight text-foreground",
-              isProfessional ? "text-2xl sm:text-3xl" : "text-2xl"
-            )}
-          >
-            {item.title}
-          </h3>
-          <p className="font-mono text-xs text-accent">{item.organization}</p>
-          <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-            {item.description}
-          </p>
-          {item.bullets && item.bullets.length > 0 ? (
-            <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
-              {item.bullets.map((b) => (
-                <li key={b} className="marker:text-accent">
-                  {b}
-                </li>
-              ))}
-            </ul>
-          ) : null}
-          {item.techLine ? (
-            <p className="mt-4 font-mono text-xs leading-relaxed text-muted-foreground">
-              <span className="text-foreground/80">{item.techLine}</span>
+          <div className={cn(hoverTimelineCardClasses, "group/timeline")}>
+            <p
+              className={cn(
+                "font-mono text-[0.65rem] uppercase tracking-[0.3em] text-muted-foreground transition-colors",
+                hoverEase,
+                "group-hover/timeline:text-foreground/80"
+              )}
+            >
+              {item.period}
             </p>
-          ) : null}
+            <h3
+              className={cn(
+                "mt-2 font-heading tracking-tight text-foreground transition-colors",
+                hoverEase,
+                isProfessional ? "text-2xl sm:text-3xl" : "text-2xl"
+              )}
+            >
+              {item.title}
+            </h3>
+            <p className="font-mono text-xs text-accent">{item.organization}</p>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              {item.description}
+            </p>
+            {item.bullets && item.bullets.length > 0 ? (
+              <ul className="mt-4 list-disc space-y-2 pl-5 text-sm leading-relaxed text-muted-foreground">
+                {item.bullets.map((b) => (
+                  <li key={b} className="marker:text-accent">
+                    {b}
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+            {item.techLine ? (
+              <p className="mt-4 font-mono text-xs leading-relaxed text-muted-foreground">
+                <span className="text-foreground/80">{item.techLine}</span>
+              </p>
+            ) : null}
+          </div>
           <span className="sr-only">
             {stepLabel(index + 1, items.length)}
           </span>
@@ -89,7 +102,7 @@ export async function ExperienceTimeline({ locale }: { locale: string }) {
       aria-labelledby="experience-heading"
       className="border-b border-border/70 bg-muted/20 py-20 sm:py-24"
     >
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="font-mono text-xs uppercase tracking-[0.35em] text-muted-foreground">
             {t("kicker")}

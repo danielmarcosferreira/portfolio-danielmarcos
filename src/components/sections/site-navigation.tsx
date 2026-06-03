@@ -34,10 +34,10 @@ export function SiteNavigation() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/55">
-      <div className="mx-auto grid max-w-6xl grid-cols-[1fr_auto] items-center gap-x-4 gap-y-3 px-4 py-4 sm:px-6 lg:grid-cols-[auto_1fr_auto] lg:gap-y-0 lg:px-8">
+      <div className="mx-auto grid max-w-7xl grid-cols-[1fr_auto] items-center gap-x-4 gap-y-3 px-4 py-4 sm:px-6 lg:grid-cols-[auto_1fr_auto] lg:gap-y-0 lg:px-8">
         <Link
           href="/"
-          className="justify-self-start font-heading text-lg tracking-tight text-foreground transition-colors hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          className="justify-self-start font-heading text-lg tracking-tight text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         >
           {t("brand")}
         </Link>
@@ -64,7 +64,7 @@ export function SiteNavigation() {
             type="button"
             variant="outline"
             size="icon-sm"
-            className="border-border/80"
+            className="border-border/80 cursor-pointer"
             aria-label={isDark ? t("themeLight") : t("themeDark")}
             disabled={!mounted}
             onClick={() => setTheme(isDark ? "light" : "dark")}
