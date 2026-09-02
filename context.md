@@ -6,7 +6,7 @@
 
 ## Purpose
 
-Editorial, single-page portfolio for **Daniel Marcos** — mid-level full-stack developer. Content is driven by the real CV (**CV-Daniel**), not fictional case studies. The site is static-first, multilingual, and optimized for recruiters and hiring managers.
+Editorial, single-page portfolio for **Daniel Marcos Ferreira** — mid-level full-stack developer. Content is driven by the real CV (**CV-Daniel**), not fictional case studies. The site is static-first, multilingual, and optimized for recruiters and hiring managers.
 
 ---
 
@@ -14,9 +14,9 @@ Editorial, single-page portfolio for **Daniel Marcos** — mid-level full-stack 
 
 | Field | Value |
 |--------|--------|
-| Display name | **Daniel Marcos** (not “Daniel Marcos Ferreira”) |
+| Display name | **Daniel Marcos Ferreira** (not “Daniel Marcos Ferreira Ferreira”) |
 | Role | **Mid-level Full-Stack Developer** (EN); localized equivalents in IT/PT |
-| Location | **Livorno Ferraris – Vercelli, Italy** |
+| Location | **Ivrea – Torino, Italy** |
 | Nationality / languages | Italian and Brazilian by birth; fluent **Portuguese** and **English** |
 | Email | `daniel.marcos.1038@gmail.com` |
 | Phone | `+39 352 086 5013` (`tel:+393520865013`) |
@@ -150,7 +150,7 @@ After copy or structure changes, verify `/en`, `/it`, `/pt` and ensure no `MISSI
 ## Change checklist for agents
 
 1. Read this file and the relevant section component + all three `messages/*.json` keys.
-2. Keep **Daniel Marcos**, **Italy location**, and **FIGTREE + NOVAWARE + ORBWARE** unless the user supplies a new CV.
+2. Keep **Daniel Marcos Ferreira**, **Italy location**, and **FIGTREE + NOVAWARE + ORBWARE** unless the user supplies a new CV.
 3. Update **en, it, pt** together for any new or renamed message keys.
 4. If adding experience entries, update `experience.ts` IDs **and** all locale JSON `experience.entries.*`.
 5. Prefer minimal diffs; match existing naming, imports (`@/`), and server-component patterns (`setRequestLocale`, `getTranslations`).

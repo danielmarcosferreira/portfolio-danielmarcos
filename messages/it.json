@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Daniel Marcos — Sviluppatore Full-Stack Mid-level",
-    "description": "Sviluppatore full-stack mid-level a Livorno Ferraris, Vercelli, Italia. React, Next.js, TypeScript, TailwindCSS, Node.js, NestJS, Firebase."
+    "title": "Daniel Marcos Ferreira — Sviluppatore Full-Stack Mid-level",
+    "description": "Sviluppatore full-stack mid-level a Ivrea, Torino, Italia. React, Next.js, TypeScript, TailwindCSS, Node.js, NestJS, Firebase."
   },
   "skipLink": {
     "label": "Vai al contenuto"
@@ -18,9 +18,9 @@
     "language": "Lingua"
   },
   "hero": {
-    "byline": "Livorno Ferraris – Vercelli, Italia",
+    "byline": "Ivrea – Torino, Italia",
     "languagesLine": "Italiano e brasiliano di nascita · Fluente in portoghese e inglese",
-    "name": "Daniel Marcos",
+    "name": "Daniel Marcos Ferreira",
     "role": "Sviluppatore Full-Stack Mid-level",
     "profile": "Sviluppatore Full-Stack Mid-level con comprovata esperienza nella progettazione e implementazione di applicazioni web scalabili, performanti e responsive. Solida specializzazione nello sviluppo frontend con React.js, Next.js, TypeScript e TailwindCSS, unita a robuste competenze backend utilizzando Node.js, NestJS, Express.js e database relazionali/non-relazionali (PostgreSQL, MongoDB, Firebase). Esperto nell'intero ciclo di vita del software, dal design di interfacce utente intuitive all'integrazione di API REST complesse. Fortemente orientato alla qualità del codice, all'adozione di clean code e alla collaborazione in ambienti Agile (Scrum).",
     "techChipsLabel": "Tecnologie principali",
@@ -85,7 +85,7 @@
         "techLine": "Tecnologie utilizzate: TypeScript, ReactJS, TailwindCSS, Node.js, NestJS, API REST, Firebase, Git, Scrum."
       },
       "job_novaware": {
-        "period": "Lug 2025 — In corso",
+        "period": "Lug 2025 — Ago 2026",
         "title": "Sviluppatore Full-Stack Mid-level",
         "organization": "NOVAWARE",
         "description": "Software house—leadership tecnica full-stack dalla discovery alla produzione.",
@@ -129,8 +129,8 @@
     }
   },
   "footer": {
-    "name": "Daniel Marcos",
-    "tagline": "Livorno Ferraris – Vercelli, Italia · Italiano e brasiliano · EN, IT e PT",
+    "name": "Daniel Marcos Ferreira",
+    "tagline": "Ivrea – Torino, Italia · Italiano e brasiliano · EN, IT e PT",
     "emailLabel": "Email",
     "emailAddress": "daniel.marcos.1038@gmail.com",
     "phoneNumber": "+393520865013",
