@@ -61,7 +61,10 @@ export default async function LocaleLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${instrumentSerif.variable} h-full scroll-smooth antialiased`}
       suppressHydrationWarning
     >
-      <body className="flex min-h-full flex-col bg-background text-foreground">
+      <body
+        className="flex min-h-full flex-col bg-background text-foreground"
+        suppressHydrationWarning
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

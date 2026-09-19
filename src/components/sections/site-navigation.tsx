@@ -30,7 +30,7 @@ export function SiteNavigation() {
   const mounted = useClientMounted();
   const t = useTranslations("nav");
 
-  const isDark = resolvedTheme === "dark";
+  const isDark = mounted && resolvedTheme === "dark";
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md supports-[backdrop-filter]:bg-background/55">
