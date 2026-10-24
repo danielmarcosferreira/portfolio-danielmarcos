@@ -35,13 +35,12 @@ Order in [`src/app/[locale]/page.tsx`](src/app/[locale]/page.tsx):
 1. **SiteNavigation** (sticky)
 2. **PortfolioHero** — About / presentation (`#top`)
 3. **ExperienceTimeline** — jobs first, then education (`#experience`, `#education`)
-4. **StackSection** (`#stack`)
-5. **SiteFooter**
-
-There is **no** Work / project card grid on the home page. Employer stories live only in the experience timeline.
+4. **ProjectsSection** (`#projects`) — carousel of live apps
+5. **StackSection** (`#stack`)
+6. **SiteFooter**
 
 ```text
-About → Experience (professional) → Education (subsection) → Stack → Footer
+About → Experience (professional) → Education (subsection) → Projects → Stack → Footer
 ```
 
 ---
@@ -53,6 +52,7 @@ About → Experience (professional) → Education (subsection) → Stack → Foo
 | `#top` | Hero / About | `about` |
 | `#experience` | Experience (includes professional jobs) | `experience` |
 | `#education` | Education subsection inside experience | `education` |
+| `#projects` | Projects carousel | `projects` |
 | `#stack` | Stack | `stack` |
 
 Nav component: [`src/components/sections/site-navigation.tsx`](src/components/sections/site-navigation.tsx). Brand monogram: **DM**.
@@ -65,7 +65,7 @@ Nav component: [`src/components/sections/site-navigation.tsx`](src/components/se
 - **URLs:** always prefixed (`/en`, `/it`, `/pt`)
 - **Messages:** [`messages/en.json`](messages/en.json), [`messages/it.json`](messages/it.json), [`messages/pt.json`](messages/pt.json)
 - **Rule:** Any user-visible string goes in **all three** JSON files under the same keys. Never hardcode copy in components except structural/UI labels that are already wired through `useTranslations` / `getTranslations`.
-- **Namespaces in use:** `metadata`, `skipLink`, `nav`, `hero`, `experience`, `stack`, `footer`
+- **Namespaces in use:** `metadata`, `skipLink`, `nav`, `hero`, `experience`, `projects`, `stack`, `footer`
 
 ### Experience entry IDs
 
@@ -85,10 +85,14 @@ Each entry may include: `period`, `title`, `organization`, `description`, option
 |------|------|--------|
 | Experience IDs | [`src/data/experience.ts`](src/data/experience.ts) | Order = display order |
 | Localized experience | [`src/lib/experience-i18n.ts`](src/lib/experience-i18n.ts) | `getLocalizedPathSections(locale)` |
-| Projects | [`src/data/projects.ts`](src/data/projects.ts) | **Empty array** — reserved for future case studies; not used on home |
-| Projects i18n | [`src/lib/projects-i18n.ts`](src/lib/projects-i18n.ts) | Only if projects are reintroduced |
+| Projects | [`src/data/projects.ts`](src/data/projects.ts) | Order = carousel order. Fields: `id`, `kind` (`employer` / `freelance` / `personal`), `imageSrc`, `tech[]`, `liveUrl` |
+| Localized projects | [`src/lib/projects-i18n.ts`](src/lib/projects-i18n.ts) | `getLocalizedProjects(locale)`; message keys use underscores (`figtree_student_platform`) under `projects.items.*` |
 
-Legacy files (not on home page): [`work-section.tsx`](src/components/sections/work-section.tsx), [`project-card.tsx`](src/components/project-card.tsx), [`projects-source.ts`](src/lib/projects-source.ts). Do not wire them back without an explicit product decision.
+### Projects (`projects.items.*`)
+
+`figtree-student-platform` (employer), `incorpora-mf` (employer), `ciway` (employer), `organiza-ai` (freelance), `debt-tracker` (personal). Stacks (from the user): Figtree — React.js, TypeScript, JavaScript, Node.js, Firebase, MongoDB, Styled Components, REST API; IncorporaMF & CIWAY — Next.js, NestJS, TypeScript, Tailwind CSS, REST API; Organiza AI & DebtTracker — Next.js, JavaScript, Firebase, Styled Components, REST API. Chips list technologies only (no soft skills like Scrum/Agile). Cards only show a "Employer project" label — the CV names FIGTREE, NOVAWARE and ORBWARE, so do not attach a company name to IncorporaMF / CIWAY unless the user confirms it.
+
+Screenshots in [`public/projects/`](public/projects/) are real WebP captures (desktop ~1920px wide; `debt-tracker` is a portrait phone screenshot flagged `mobile: true` for extra padding and a shadow). The carousel frame is 12:7 to match the desktop captures, and every image uses `object-contain`, so nothing is cropped — keep new screenshots close to that ratio. To swap one, convert it to WebP in that folder and update `imageSrc` in `projects.ts`. To add a project: entry in `projects.ts` + `projects.items.<id_with_underscores>` (`title`, `description`, `imageAlt`) in all three JSON files.
 
 ---
 
@@ -98,6 +102,8 @@ Legacy files (not on home page): [`work-section.tsx`](src/components/sections/wo
 |-----------|------|
 | [`portfolio-hero.tsx`](src/components/sections/portfolio-hero.tsx) | Name, role, profile, tech chips, contact links, CTA to `#experience` |
 | [`experience-timeline.tsx`](src/components/sections/experience-timeline.tsx) | Professional timeline (emphasized), then education |
+| [`projects-section.tsx`](src/components/sections/projects-section.tsx) | Server section: heading + localized data for the carousel |
+| [`projects-carousel.tsx`](src/components/projects-carousel.tsx) | Client carousel: CSS scroll-snap row, prev/next buttons, arrow keys, no autoplay |
 | [`stack-section.tsx`](src/components/sections/stack-section.tsx) | Three columns: `frontend`, `backend`, `data` |
 | [`site-footer.tsx`](src/components/sections/site-footer.tsx) | Name, contact links, tagline |
 | [`locale-switcher.tsx`](src/components/locale-switcher.tsx) | EN / IT / PT |
@@ -120,7 +126,7 @@ Root layout passes through children only: [`src/app/layout.tsx`](src/app/layout.
 - **Aesthetic:** Editorial — serif headings (`font-heading`), mono labels (`font-mono`), restrained borders, muted backgrounds on alternating sections.
 - **Theming:** CSS variables in [`src/app/globals.css`](src/app/globals.css); class-based dark mode.
 - **Accessibility:** Skip link, section `aria-labelledby`, focus rings on interactive elements, `sr-only` step labels on timeline.
-- **Animations:** Framer Motion only where already used (e.g. project cards if re-enabled); do not add heavy motion by default.
+- **Animations:** Framer Motion only where already used; do not add heavy motion by default. The projects carousel uses native CSS scroll-snap and shared hover classes, no autoplay.
 - **Images:** Hero has no stock spotlight image; experience is text-first.
 
 ---
@@ -163,7 +169,7 @@ After copy or structure changes, verify `/en`, `/it`, `/pt` and ensure no `MISSI
 
 - `public/cv-daniel.pdf` + “Download CV” button in hero
 - Profile photo in About section
-- Case-study **projects** grid (would need `projects.ts` + `projects.*` messages + home page wiring)
+- Repo links per project (add optional `repoUrl` to `projects.ts` + a second button in the card)
 
 ---
 
@@ -172,8 +178,8 @@ After copy or structure changes, verify `/en`, `/it`, `/pt` and ensure no `MISSI
 ```text
 messages/           → all UI copy (en, it, pt)
 src/app/[locale]/   → page + layout + metadata
-src/data/           → experience IDs, projects (empty)
-src/lib/            → experience-i18n, projects-i18n, utils, tech-icons
+src/data/           → experience IDs, projects
+src/lib/            → experience-i18n, projects-i18n, interactive-hover, utils
 src/components/sections/ → page sections
 src/i18n/           → routing, request, navigation helpers
 src/proxy.ts        → locale middleware

@@ -68,7 +68,7 @@ export async function PortfolioHero({ locale }: PortfolioHeroProps) {
           >
             {t("viewExperience")}
           </a>
-          <div className="flex flex-wrap gap-x-5 gap-y-2 font-mono text-xs">
+          <div className="flex flex-col sm:flex-wrap gap-x-5 gap-y-2 font-mono text-xs">
             {email ? (
               <a
                 href={`mailto:${email}`}

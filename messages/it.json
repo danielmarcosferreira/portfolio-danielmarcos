@@ -11,6 +11,7 @@
     "about": "Profilo",
     "experience": "Esperienza",
     "education": "Formazione",
+    "projects": "Progetti",
     "stack": "Stack",
     "brand": "DM",
     "themeLight": "Attiva tema chiaro",
@@ -110,21 +111,84 @@
       }
     }
   },
+  "projects": {
+    "kicker": "Progetti",
+    "title": "Cosa ho costruito.",
+    "lede": "Alcune delle applicazioni live che ho progettato e pubblicato, per aziende, clienti e per me stesso.",
+    "previous": "Progetto precedente",
+    "next": "Progetto successivo",
+    "carouselLabel": "Progetti",
+    "slideLabel": "Progetto {current} di {total}",
+    "techList": "Tecnologie",
+    "viewLive": "Vedi live",
+    "viewLiveLabel": "Vedi {title} live (si apre in una nuova scheda)",
+    "kinds": {
+      "employer": "Progetto aziendale",
+      "freelance": "Progetto freelance",
+      "personal": "Progetto personale"
+    },
+    "items": {
+      "figtree_student_platform": {
+        "title": "Figtree Student Platform",
+        "description": "Portale per studenti realizzato per migliaia di utenti, con gamification e IA per aiutare gli studenti a migliorare le proprie competenze.",
+        "imageAlt": "Schermata della dashboard di Figtree Student Platform"
+      },
+      "incorpora_mf": {
+        "title": "IncorporaMF",
+        "description": "Applicazione gestionale che copre ogni fase di un cantiere, dalla pianificazione alla consegna.",
+        "imageAlt": "Schermata dell'applicazione IncorporaMF"
+      },
+      "ciway": {
+        "title": "CIWAY",
+        "description": "Applicazione gestionale per un grande porto merci, che tiene traccia di tutti i container in arrivo e in partenza.",
+        "imageAlt": "Schermata dell'applicazione CIWAY"
+      },
+      "organiza_ai": {
+        "title": "Organiza-ai",
+        "description": "App di finanza personale usata da centinaia di persone per gestire i flussi di cassa propri e della famiglia.",
+        "imageAlt": "Schermata dell'applicazione Organiza-ai"
+      },
+      "debt_tracker": {
+        "title": "DebtTracker",
+        "description": "App mobile dedicata alle spese con carta di credito, con esportazione in PDF ed Excel dei dati scelti dall'utente.",
+        "imageAlt": "Schermata dell'app mobile DebtTracker"
+      }
+    }
+  },
   "stack": {
     "kicker": "Stack",
     "title": "Tecnologie che uso ogni giorno.",
     "columns": {
       "frontend": {
         "title": "Frontend",
-        "items": ["React", "Next.js", "TypeScript", "TailwindCSS", "HTML & CSS"]
+        "items": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "TailwindCSS",
+          "HTML & CSS"
+        ]
       },
       "backend": {
         "title": "Backend",
-        "items": ["Node.js", "NestJS", "Express.js", "API REST"]
+        "items": [
+          "Node.js",
+          "NestJS",
+          "Express.js",
+          "API REST"
+        ]
       },
       "data": {
         "title": "Dati e pratiche",
-        "items": ["PostgreSQL", "MongoDB", "Firebase", "Git", "Scrum", "Clean code", "Code review"]
+        "items": [
+          "PostgreSQL",
+          "MongoDB",
+          "Firebase",
+          "Git",
+          "Scrum",
+          "Clean code",
+          "Code review"
+        ]
       }
     }
   },

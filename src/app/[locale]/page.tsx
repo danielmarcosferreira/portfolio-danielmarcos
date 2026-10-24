@@ -2,6 +2,7 @@ import { setRequestLocale } from "next-intl/server";
 
 import { ExperienceTimeline } from "@/components/sections/experience-timeline";
 import { PortfolioHero } from "@/components/sections/portfolio-hero";
+import { ProjectsSection } from "@/components/sections/projects-section";
 import { SiteFooter } from "@/components/sections/site-footer";
 import { SiteNavigation } from "@/components/sections/site-navigation";
 import { StackSection } from "@/components/sections/stack-section";
@@ -18,6 +19,7 @@ export default async function HomePage({ params }: Props) {
       <main id="main-content" tabIndex={-1} className="flex-1 outline-none">
         <PortfolioHero locale={locale} />
         <ExperienceTimeline locale={locale} />
+        <ProjectsSection locale={locale} />
         <StackSection locale={locale} />
       </main>
       <SiteFooter locale={locale} />

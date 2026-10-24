@@ -14,6 +14,7 @@ const NAV_KEYS = [
   { href: "#top", labelKey: "about" as const },
   { href: "#experience", labelKey: "experience" as const },
   { href: "#education", labelKey: "education" as const },
+  { href: "#projects", labelKey: "projects" as const },
   { href: "#stack", labelKey: "stack" as const },
 ];
 
@@ -43,7 +44,7 @@ export function SiteNavigation() {
         </Link>
         <nav
           aria-label={t("primary")}
-          className="col-span-2 flex flex-wrap items-center justify-center gap-1 border-t border-border/50 pt-3 sm:border-t-0 sm:pt-0 lg:col-span-1 lg:col-start-2 lg:justify-center"
+          className="col-span-2 flex flex-wrap items-center justify-center gap-0.1 border-t border-border/50 pt-3 sm:border-t-0 sm:pt-0 lg:col-span-1 lg:col-start-2 lg:justify-center"
         >
           {NAV_KEYS.map((item) => (
             <a

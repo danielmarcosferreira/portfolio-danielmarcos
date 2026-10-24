@@ -1,24 +1,22 @@
 import { getTranslations } from "next-intl/server";
 
-import type { Project, ProjectBase } from "@/types/project";
+import { projects } from "@/data/projects";
+import type { Project } from "@/types/project";
 
+/** Message keys use underscores (`figtree_student_platform`). */
 export function projectMessageId(id: string) {
   return id.replace(/-/g, "_");
 }
 
-export async function mergeProjectMessages(
-  locale: string,
-  bases: ProjectBase[]
-): Promise<Project[]> {
+export async function getLocalizedProjects(locale: string): Promise<Project[]> {
   const t = await getTranslations({ locale, namespace: "projects" });
-  return bases.map((p) => {
+  return projects.map((p) => {
     const mid = projectMessageId(p.id);
     return {
       ...p,
-      title: t(`${mid}.title`),
-      role: t(`${mid}.role`),
-      summary: t(`${mid}.summary`),
-      imageAlt: t(`${mid}.imageAlt`),
+      title: t(`items.${mid}.title`),
+      description: t(`items.${mid}.description`),
+      imageAlt: t(`items.${mid}.imageAlt`),
     };
   });
 }

@@ -1,33 +1,20 @@
-/** Keys aligned with `TECH_REGISTRY` — swap this module for DB rows later. */
-export type ProjectTechKey =
-  | "react"
-  | "nextjs"
-  | "nestjs"
-  | "typescript"
-  | "nodejs"
-  | "mongodb"
-  | "postgres"
-  | "firebase"
-  | "api"
-  | "websocket";
+export type ProjectKind = "employer" | "freelance" | "personal";
 
-export type ProjectGridSpan = "hero" | "wide" | "standard";
-
-/** Locale-agnostic fields; copy comes from messages (projects). */
+/** Locale-agnostic fields; copy comes from messages (`projects.items.*`). */
 export interface ProjectBase {
   id: string;
-  year: number;
+  kind: ProjectKind;
+  /** Screenshot in `public/projects/`. */
   imageSrc: string;
-  tech: ProjectTechKey[];
-  /** Shown in the asymmetrical hero spotlight */
-  featured?: boolean;
-  href?: string | null;
-  gridSpan: ProjectGridSpan;
+  /** Portrait phone screenshot — shown whole instead of cropped to the card frame. */
+  mobile?: boolean;
+  /** Technology names are proper nouns, so they are not translated. */
+  tech: string[];
+  liveUrl: string;
 }
 
 export interface Project extends ProjectBase {
   title: string;
-  role: string;
-  summary: string;
+  description: string;
   imageAlt: string;
 }

@@ -11,6 +11,7 @@
     "about": "About",
     "experience": "Experience",
     "education": "Education",
+    "projects": "Projects",
     "stack": "Stack",
     "brand": "DM",
     "themeLight": "Activate light mode",
@@ -110,21 +111,84 @@
       }
     }
   },
+  "projects": {
+    "kicker": "Projects",
+    "title": "What I've built.",
+    "lede": "Some of the live applications I designed and shipped, for employers, clients and myself.",
+    "previous": "Previous project",
+    "next": "Next project",
+    "carouselLabel": "Projects",
+    "slideLabel": "Project {current} of {total}",
+    "techList": "Technologies",
+    "viewLive": "View live",
+    "viewLiveLabel": "View {title} live (opens in a new tab)",
+    "kinds": {
+      "employer": "Employer project",
+      "freelance": "Freelance project",
+      "personal": "Personal project"
+    },
+    "items": {
+      "figtree_student_platform": {
+        "title": "Figtree Student Platform",
+        "description": "Student portal built for thousands of users, with gamification and AI to help students improve their skills.",
+        "imageAlt": "Screenshot of the Figtree Student Platform dashboard"
+      },
+      "incorpora_mf": {
+        "title": "IncorporaMF",
+        "description": "Management app covering every step of a construction project, from planning to delivery.",
+        "imageAlt": "Screenshot of the IncorporaMF application"
+      },
+      "ciway": {
+        "title": "CIWAY",
+        "description": "Management app for a large cargo port, tracking every container that arrives and leaves.",
+        "imageAlt": "Screenshot of the CIWAY application"
+      },
+      "organiza_ai": {
+        "title": "Organiza-ai",
+        "description": "Personal finance app used by hundreds of people to manage their own and their family's cash flows.",
+        "imageAlt": "Screenshot of the Organiza-ai application"
+      },
+      "debt_tracker": {
+        "title": "DebtTracker",
+        "description": "Mobile app focused on credit card spending, with PDF and Excel export of the data users choose.",
+        "imageAlt": "Screenshot of the DebtTracker mobile app"
+      }
+    }
+  },
   "stack": {
     "kicker": "Stack",
     "title": "Technologies I work with daily.",
     "columns": {
       "frontend": {
         "title": "Frontend",
-        "items": ["React", "Next.js", "TypeScript", "TailwindCSS", "HTML & CSS"]
+        "items": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "TailwindCSS",
+          "HTML & CSS"
+        ]
       },
       "backend": {
         "title": "Backend",
-        "items": ["Node.js", "NestJS", "Express.js", "REST APIs"]
+        "items": [
+          "Node.js",
+          "NestJS",
+          "Express.js",
+          "REST APIs"
+        ]
       },
       "data": {
         "title": "Data & practices",
-        "items": ["PostgreSQL", "MongoDB", "Firebase", "Git", "Scrum", "Clean code", "Code review"]
+        "items": [
+          "PostgreSQL",
+          "MongoDB",
+          "Firebase",
+          "Git",
+          "Scrum",
+          "Clean code",
+          "Code review"
+        ]
       }
     }
   },

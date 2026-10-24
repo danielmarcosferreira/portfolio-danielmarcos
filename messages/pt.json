@@ -11,12 +11,13 @@
     "about": "Sobre",
     "experience": "Experiência",
     "education": "Formação",
+    "projects": "Projetos",
     "stack": "Stack",
     "brand": "DM",
     "themeLight": "Ativar tema claro",
     "themeDark": "Ativar tema escuro",
     "language": "Idioma"
-  }, 
+  },
   "hero": {
     "byline": "Ivrea – Torino, Itália",
     "languagesLine": "Italiano e brasileiro de nascimento · Fluente em português e inglês",
@@ -110,21 +111,84 @@
       }
     }
   },
+  "projects": {
+    "kicker": "Projetos",
+    "title": "O que eu construí.",
+    "lede": "Algumas das aplicações que projetei e lancei em produção, para empresas, clientes e para mim mesmo.",
+    "previous": "Projeto anterior",
+    "next": "Próximo projeto",
+    "carouselLabel": "Projetos",
+    "slideLabel": "Projeto {current} de {total}",
+    "techList": "Tecnologias",
+    "viewLive": "Ver online",
+    "viewLiveLabel": "Ver {title} online (abre em uma nova aba)",
+    "kinds": {
+      "employer": "Projeto de empresa",
+      "freelance": "Projeto freelance",
+      "personal": "Projeto pessoal"
+    },
+    "items": {
+      "figtree_student_platform": {
+        "title": "Figtree Student Platform",
+        "description": "Portal do aluno criado para milhares de usuários, com gamificação e IA para ajudar os alunos a melhorar suas habilidades.",
+        "imageAlt": "Captura de tela do painel da Figtree Student Platform"
+      },
+      "incorpora_mf": {
+        "title": "IncorporaMF",
+        "description": "Aplicativo de gestão que cobre todas as etapas de uma obra, do planejamento à entrega.",
+        "imageAlt": "Captura de tela do aplicativo IncorporaMF"
+      },
+      "ciway": {
+        "title": "CIWAY",
+        "description": "Aplicativo de gestão para um grande porto de cargas, controlando todos os contêineres que chegam e saem.",
+        "imageAlt": "Captura de tela do aplicativo CIWAY"
+      },
+      "organiza_ai": {
+        "title": "Organiza-ai",
+        "description": "Aplicativo de finanças pessoais usado por centenas de pessoas para gerenciar o fluxo de caixa próprio e da família.",
+        "imageAlt": "Captura de tela do aplicativo Organiza-ai"
+      },
+      "debt_tracker": {
+        "title": "DebtTracker",
+        "description": "Aplicativo mobile focado em gastos no cartão de crédito, com exportação em PDF e Excel dos dados que o usuário escolher.",
+        "imageAlt": "Captura de tela do aplicativo mobile DebtTracker"
+      }
+    }
+  },
   "stack": {
     "kicker": "Stack",
     "title": "Tecnologias que uso no dia a dia.",
     "columns": {
       "frontend": {
         "title": "Frontend",
-        "items": ["React", "Next.js", "TypeScript", "TailwindCSS", "HTML e CSS"]
+        "items": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "TailwindCSS",
+          "HTML e CSS"
+        ]
       },
       "backend": {
         "title": "Backend",
-        "items": ["Node.js", "NestJS", "Express.js", "APIs REST"]
+        "items": [
+          "Node.js",
+          "NestJS",
+          "Express.js",
+          "APIs REST"
+        ]
       },
       "data": {
         "title": "Dados e práticas",
-        "items": ["PostgreSQL", "MongoDB", "Firebase", "Git", "Scrum", "Clean code", "Code review"]
+        "items": [
+          "PostgreSQL",
+          "MongoDB",
+          "Firebase",
+          "Git",
+          "Scrum",
+          "Clean code",
+          "Code review"
+        ]
       }
     }
   },
